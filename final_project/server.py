@@ -14,7 +14,7 @@ def englishToFrench():
 def frenchToEnglish():
     textToTranslate = request.args.get('textToTranslate')
     french_to_english = translator.french_to_english(textToTranslate)
-    return "Translated text to English"
+    return french_to_english
 
 @app.route("/")
 def renderIndexPage():
